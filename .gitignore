@@ -1,0 +1,12 @@
+# Local dev / agent artifacts
+.mini-agent/
+__pycache__/
+generate_website.py
+minimax_coder.py
+*.pyc
+# Local dev / agent artifacts
+.mini-agent/
+__pycache__/
+generate_website.py
+minimax_coder.py
+*.pyc

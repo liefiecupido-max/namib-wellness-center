@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Namib Wellness Center | Hyperbaric Oxygen Therapy in Swakopmund</title>
-  <meta name="description" content="Namib Wellness Center is Swakopmund's premier hyperbaric oxygen therapy center. Book your session today." />
+  <title>Afrateq mHBOT Wellness & Recovery | Swakopmund</title>
+  <meta name="description" content="Afrateq provides mild hyperbaric oxygen wellness and recovery sessions (1.3-1.4 ATA) in Swakopmund, Namibia." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
@@ -85,6 +85,14 @@
     .svc-body h3{font-size:1.08rem;font-weight:700;color:var(--text-dark);margin-bottom:8px}
     .svc-body p{font-size:.84rem;color:var(--text-light);line-height:1.65;margin-bottom:14px}
     .svc-tag{display:inline-block;background:var(--accent);color:var(--teal);font-size:.7rem;font-weight:600;padding:4px 11px;border-radius:50px}
+    #conditions{background:var(--grey-light)}
+    .cond-header{text-align:center}.cond-header .section-sub{margin:0 auto 44px;max-width:700px}
+    .cond-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .cond-card{background:#fff;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);transition:transform var(--tr),box-shadow var(--tr);display:flex;flex-direction:column;gap:10px}
+    .cond-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+    .cond-card h3{font-size:.92rem;color:var(--text-dark)}
+    .cond-card p{font-size:.8rem;color:var(--text-light);line-height:1.55;flex-grow:1}
+    .cond-link{font-size:.78rem;font-weight:700;color:var(--teal)}
     /* Bulletproof image fallback placeholder */
     .img-placeholder{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:12px;background:linear-gradient(135deg,var(--teal) 0%,var(--teal-light) 100%);color:#fff;font-weight:700;font-size:.88rem;letter-spacing:.02em}
     .img-error .img-placeholder{display:flex}
@@ -179,8 +187,8 @@
     .fade-in.visible{opacity:1;transform:translateY(0)}
     .toast{position:fixed;bottom:30px;right:30px;background:var(--teal);color:#fff;padding:15px 22px;border-radius:var(--radius);box-shadow:var(--shadow-lg);font-size:.88rem;font-weight:500;z-index:9999;transform:translateY(80px);opacity:0;transition:all .4s ease;max-width:310px}
     .toast.show{transform:translateY(0);opacity:1}
-    @media(max-width:1024px){.usp-grid{grid-template-columns:repeat(2,1fr)}.footer-top{grid-template-columns:1fr 1fr}.f-brand{grid-column:span 2}}
-    @media(max-width:768px){section{padding:68px 5%}.nav-links{display:none}.hamburger{display:flex}.about-grid,.booking-grid,.contact-grid{grid-template-columns:1fr;gap:40px}.about-img-wrap img{height:270px}.svc-grid{grid-template-columns:1fr}.usp-grid{grid-template-columns:1fr 1fr}.testi-grid{grid-template-columns:1fr}.fr{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr;gap:28px}.f-brand{grid-column:span 1}.footer-bot{flex-direction:column;align-items:flex-start}}
+    @media(max-width:1024px){.usp-grid{grid-template-columns:repeat(2,1fr)}.footer-top{grid-template-columns:1fr 1fr}.f-brand{grid-column:span 2}.cond-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){section{padding:68px 5%}.nav-links{display:none}.hamburger{display:flex}.about-grid,.booking-grid,.contact-grid{grid-template-columns:1fr;gap:40px}.about-img-wrap img{height:270px}.svc-grid{grid-template-columns:1fr}.cond-grid{grid-template-columns:1fr 1fr}.usp-grid{grid-template-columns:1fr 1fr}.testi-grid{grid-template-columns:1fr}.fr{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr;gap:28px}.f-brand{grid-column:span 1}.footer-bot{flex-direction:column;align-items:flex-start}}
     @media(max-width:480px){.benefit-grid{grid-template-columns:1fr}.usp-grid{grid-template-columns:1fr}.bform{padding:22px 18px}}
   </style>
 </head>
@@ -189,6 +197,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMobile()">About</a>
   <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#conditions" onclick="closeMobile()">Conditions</a>
   <a href="#why" onclick="closeMobile()">Why Us</a>
   <a href="#booking" onclick="closeMobile()">Book Now</a>
   <a href="#faq" onclick="closeMobile()">FAQ</a>
@@ -196,10 +205,11 @@
 </div>
 
 <nav id="nav">
-  <div class="logo"><div class="logo-box">NWC</div>Namib Wellness Center</div>
+  <div class="logo"><div class="logo-box">AFR</div>Afrateq mHBOT</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#conditions">Conditions</a></li>
     <li><a href="#why">Why Us</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#booking" class="nav-cta">Book Now</a></li>
@@ -215,8 +225,8 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">&#127475;&#127462; Swakopmund, Namibia</div>
-    <h1>Breathe Better.<br><em>Heal Faster.</em></h1>
-    <p>Namibia's Premier Hyperbaric Oxygen Therapy Center — certified, coastal, and built for results.</p>
+    <h1>Recover Better.<br><em>Support Your Wellness.</em></h1>
+    <p>Mild hyperbaric oxygen wellness and recovery sessions at 1.3-1.4 ATA, delivered with safety-first protocols.</p>
     <div class="hero-btns">
       <a href="#booking" class="btn btn-w">&#128197; Book a Session</a>
       <a href="#about" class="btn btn-o">Learn More</a>
@@ -233,20 +243,20 @@
   <div class="max">
     <div class="about-grid">
       <div class="about-img-wrap fade-in">
-        <img src="hbot-setup.jpg" data-fallback="https://raw.githubusercontent.com/liefiecupido-max/namib-wellness-center/main/hbot-setup.jpg" alt="Namib Wellness Center HBOT setup" onerror="imgFallback(this)" />
+        <img src="hbot-setup.jpg" data-fallback="https://raw.githubusercontent.com/liefiecupido-max/namib-wellness-center/main/hbot-setup.jpg" alt="Afrateq mild hyperbaric chamber setup" onerror="imgFallback(this)" />
         <div class="img-badge">
           <div class="badge-i">&#127942;</div>
-          <div class="badge-t"><strong>Certified</strong><span>Operators &amp; Equipment</span></div>
+          <div class="badge-t"><strong>Safety First</strong><span>Screening &amp; Session Protocols</span></div>
         </div>
       </div>
       <div class="about-text fade-in">
-        <p class="section-label">What is HBOT?</p>
-        <h2 class="section-title">Healing at the<br>cellular level</h2>
-        <p class="section-sub">Hyperbaric Oxygen Therapy delivers 100% pure oxygen in a pressurised chamber, flooding your body with up to 20x normal oxygen levels — accelerating healing, reducing inflammation, and boosting recovery.</p>
+        <p class="section-label">What is mHBOT?</p>
+        <h2 class="section-title">Adjunct wellness and<br>recovery support</h2>
+        <p class="section-sub">Afrateq provides mild hyperbaric sessions in a soft-shell chamber at 1.3-1.4 ATA. Sessions are used as adjunct wellness/recovery support. Results vary by individual and this service is not a substitute for medical care.</p>
         <div class="benefit-grid">
-          <div class="b-card"><div class="b-icon">&#129657;</div><div><h4>Wound Healing</h4><p>Heals chronic wounds, surgical sites &amp; diabetic ulcers fast.</p></div></div>
-          <div class="b-card"><div class="b-icon">&#127939;</div><div><h4>Sports Recovery</h4><p>Cuts recovery time, reduces soreness &amp; boosts performance.</p></div></div>
-          <div class="b-card"><div class="b-icon">&#129496;</div><div><h4>General Wellness</h4><p>Improves energy, sleep, focus and overall vitality.</p></div></div>
+          <div class="b-card"><div class="b-icon">&#129657;</div><div><h4>Structured Recovery</h4><p>Used in planned blocks for recovery readiness and routine support.</p></div></div>
+          <div class="b-card"><div class="b-icon">&#127939;</div><div><h4>Sports &amp; Activity</h4><p>Often combined with rehab, load management, sleep and nutrition.</p></div></div>
+          <div class="b-card"><div class="b-icon">&#129496;</div><div><h4>General Wellness</h4><p>Can support stress, sleep and recovery routines when tolerated.</p></div></div>
         </div>
       </div>
     </div>
@@ -258,37 +268,55 @@
   <div class="max">
     <div class="svc-header fade-in">
       <p class="section-label">Our Services</p>
-      <h2 class="section-title">Tailored therapy programmes</h2>
-      <p class="section-sub">Whether you're recovering from injury, optimising performance, or simply investing in your health — we have a programme for you.</p>
+      <h2 class="section-title">Tailored session pathways</h2>
+      <p class="section-sub">Choose a pathway based on your goals and screening outcome. mHBOT is offered as adjunct wellness/recovery support and not as medical treatment.</p>
     </div>
     <div class="svc-grid">
       <div class="svc-card">
         <div class="svc-img"><img src="medical-glucose.jpg" data-fallback="" alt="Finger-prick blood glucose test with glucometer" onerror="imgFallback(this)" /></div>
         <div class="svc-body">
           <div class="svc-icon">&#9877;&#65039;</div>
-          <h3>Medical HBOT</h3>
-          <p>Prescribed hyperbaric therapy for wound healing, radiation injury, carbon monoxide poisoning, and neurological conditions.</p>
-          <span class="svc-tag">Clinically supervised</span>
+          <h3>Discovery Trial</h3>
+          <p>3-session introductory block for tolerance and early response check, with baseline review and next-step planning.</p>
+          <span class="svc-tag">NAD 1,950</span>
         </div>
       </div>
       <div class="svc-card">
         <div class="svc-img"><img src="sports-stretch.jpg" data-fallback="" alt="Athlete stretching hamstrings for mobility and recovery" loading="lazy" onerror="imgFallback(this)" /></div>
         <div class="svc-body">
           <div class="svc-icon">&#127947;</div>
-          <h3>Sports Recovery</h3>
-          <p>Accelerate muscle recovery, reduce inflammation, and get back to peak performance faster. Used by elite athletes worldwide.</p>
-          <span class="svc-tag">Performance optimised</span>
+          <h3>Recovery Block</h3>
+          <p>10-session structured block over 2-4 weeks for recovery/performance and routine wellness support.</p>
+          <span class="svc-tag">NAD 5,000</span>
         </div>
       </div>
       <div class="svc-card">
         <div class="svc-img"><img src="hbot-chamber.jpg" data-fallback="" alt="Portable hyperbaric oxygen therapy (HBOT) chamber" loading="lazy" onerror="imgFallback(this)" /></div>
         <div class="svc-body">
           <div class="svc-icon">&#127807;</div>
-          <h3>General Wellness</h3>
-          <p>Boost energy, improve cognitive clarity, enhance immunity, and slow cellular ageing with regular wellness sessions.</p>
-          <span class="svc-tag">Wellness &amp; longevity</span>
+          <h3>Progress Block</h3>
+          <p>20-session longer pathway with reassessment points for clients seeking structured ongoing support.</p>
+          <span class="svc-tag">NAD 9,000</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section id="conditions">
+  <div class="max">
+    <div class="cond-header fade-in">
+      <p class="section-label">Conditions / Who It Helps</p>
+      <h2 class="section-title">Explore focused information pages</h2>
+      <p class="section-sub">These pages explain where clients commonly explore mHBOT support. They are educational and should be used together with your doctor or care team where relevant.</p>
+    </div>
+    <div class="cond-grid">
+      <a class="cond-card fade-in" href="landing/surgery-aftercare.html"><h3>Surgery Aftercare</h3><p>Adjunct support for selected post-operative recovery situations.</p><span class="cond-link">View page &rarr;</span></a>
+      <a class="cond-card fade-in" href="landing/diabetic-support.html"><h3>Diabetic Foot Support</h3><p>Practical adjunct information for families already under wound-care teams.</p><span class="cond-link">View page &rarr;</span></a>
+      <a class="cond-card fade-in" href="landing/sports-injuries.html"><h3>Sports Injuries</h3><p>Recovery planning for athletes and active people with variable response.</p><span class="cond-link">View page &rarr;</span></a>
+      <a class="cond-card fade-in" href="landing/autism-families.html"><h3>Autism Families</h3><p>Balanced family guide for optional adjunct use with realistic expectations.</p><span class="cond-link">View page &rarr;</span></a>
+      <a class="cond-card fade-in" href="landing/chronic-pain.html"><h3>Chronic Pain</h3><p>How mHBOT may fit as one part of a broader multimodal support plan.</p><span class="cond-link">View page &rarr;</span></a>
     </div>
   </div>
 </section>
@@ -298,13 +326,13 @@
   <div class="max">
     <div class="why-header fade-in">
       <p class="section-label">Why Choose Us</p>
-      <h2 class="section-title">Namibia's only dedicated HBOT center</h2>
-      <p class="section-sub">We're not a side offering — HBOT is all we do, and we do it exceptionally well.</p>
+      <h2 class="section-title">Structured, safety-led mHBOT service</h2>
+      <p class="section-sub">We operate with clear onboarding, contraindication screening, and progress reviews to keep expectations realistic.</p>
     </div>
     <div class="usp-grid">
-      <div class="usp-card"><div class="usp-icon">&#127757;</div><h3>Only HBOT in the Region</h3><p>The sole dedicated hyperbaric center serving Namibia's Erongo coast — no need to travel abroad.</p></div>
+      <div class="usp-card"><div class="usp-icon">&#127757;</div><h3>mHBOT Focus</h3><p>Dedicated mild hyperbaric wellness/recovery sessions at 1.3-1.4 ATA.</p></div>
       <div class="usp-card"><div class="usp-icon">&#127465;&#127466;</div><h3>Fluent in German</h3><p>German-language support available for Swakopmund's German-speaking community and visitors.</p></div>
-      <div class="usp-card"><div class="usp-icon">&#128203;</div><h3>Certified Operators</h3><p>All sessions conducted by internationally certified hyperbaric technicians with full safety protocols.</p></div>
+      <div class="usp-card"><div class="usp-icon">&#128203;</div><h3>Safety Protocols</h3><p>Screening, ear equalization coaching, and session standards aligned to internal safety protocols.</p></div>
       <div class="usp-card"><div class="usp-icon">&#127754;</div><h3>Coastal Location</h3><p>Conveniently located in Swakopmund, serving the entire coast from Walvis Bay to Henties Bay.</p></div>
     </div>
   </div>
@@ -316,12 +344,12 @@
     <div class="booking-grid">
       <div class="booking-info fade-in">
         <h2>Book Your Session</h2>
-        <p>Ready to start your healing journey? Fill in the form and our team will confirm your booking within 2 hours.</p>
+        <p>Share your preferred date and goals. We use this form to capture booking requests and then follow up on WhatsApp or phone.</p>
         <div class="steps">
-          <div class="step"><div class="step-n">1</div><div><h4>Choose your service</h4><p>Select the therapy type that fits your needs.</p></div></div>
-          <div class="step"><div class="step-n">2</div><div><h4>Pick a date &amp; time</h4><p>We have sessions from 9:00 AM to 5:00 PM, Mon–Sat.</p></div></div>
-          <div class="step"><div class="step-n">3</div><div><h4>We confirm</h4><p>You'll receive a confirmation call or WhatsApp within 2 hours.</p></div></div>
-          <div class="step"><div class="step-n">4</div><div><h4>Arrive &amp; breathe</h4><p>Arrive 15 min early. Wear comfortable, natural-fibre clothing.</p></div></div>
+          <div class="step"><div class="step-n">1</div><div><h4>Choose a pathway</h4><p>Select the package or session type that fits your plan.</p></div></div>
+          <div class="step"><div class="step-n">2</div><div><h4>Pick preferred time</h4><p>Hours: Mon-Fri 08:00-18:00, Sat 09:00-14:00.</p></div></div>
+          <div class="step"><div class="step-n">3</div><div><h4>Screening check</h4><p>We review contraindications and confirm if the session is suitable.</p></div></div>
+          <div class="step"><div class="step-n">4</div><div><h4>Start your block</h4><p>Session plans are adjusted for tolerance, comfort and goals.</p></div></div>
         </div>
       </div>
       <div class="bform fade-in">
@@ -331,10 +359,11 @@
             <label for="service">Service *</label>
             <select id="service" name="service" required>
               <option value="">Select a service...</option>
-              <option>Medical HBOT</option>
-              <option>Sports Recovery</option>
-              <option>General Wellness</option>
-              <option>Consultation only</option>
+              <option>Single Session (NAD 700)</option>
+              <option>Discovery Trial - 3 Sessions</option>
+              <option>Recovery Block - 10 Sessions</option>
+              <option>Progress Block - 20 Sessions</option>
+              <option>Screening consultation</option>
             </select>
           </div>
           <div class="fr">
@@ -370,10 +399,10 @@
           </div>
           <div class="fg">
             <label for="fnotes">Additional Notes</label>
-            <textarea id="fnotes" name="notes" placeholder="Medical conditions, questions, or anything else we should know..."></textarea>
+            <textarea id="fnotes" name="notes" placeholder="Goals, comfort notes, and any questions for screening..."></textarea>
           </div>
           <button type="submit" class="btn-sub">Confirm Booking Request &#8594;</button>
-          <p class="fnote">&#128274; Your information is private and never shared.</p>
+          <p class="fnote">&#128274; Demo form: stored only in your browser localStorage on this device.</p>
         </form>
       </div>
     </div>
@@ -389,11 +418,11 @@
     <div class="faq-list">
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
-          Is HBOT safe? Are there any side effects?
+          Is mild HBOT safe? Are there side effects?
           <span class="faq-chev">&#9660;</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner">HBOT is very safe when conducted by certified operators in a proper clinical setting. The most common side effect is mild ear discomfort during pressurisation, similar to what you feel on an aeroplane. Our technicians will guide you through equalisation techniques. Serious complications are extremely rare.</div>
+          <div class="faq-a-inner">mHBOT sessions are screened before booking and run with safety protocols. The most common issue is ear pressure discomfort during compression, similar to flying. We coach equalization and slow/stop transitions if needed.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -402,7 +431,7 @@
           <span class="faq-chev">&#9660;</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner">Most sessions last 60–90 minutes, including pressurisation and depressurisation time. You'll be breathing pure oxygen comfortably inside the chamber. Many clients read, listen to music, or simply rest during their session.</div>
+          <div class="faq-a-inner">A typical visit is about 70-90 minutes including compression and decompression, with 45-60 minutes at pressure. Most clients rest, listen to audio, or relax in the chamber.</div>
         </div>
       </div>
       <div class="faq-item">
@@ -411,16 +440,16 @@
           <span class="faq-chev">&#9660;</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner">It depends on your condition and goals. A single session can help with acute conditions or sports recovery. Chronic conditions typically require 20–40 sessions for optimal results. We'll discuss a recommended protocol during your initial consultation.</div>
+          <div class="faq-a-inner">Needs vary by person and goal. We usually start with a Discovery Trial (3 sessions) or a 10-session block, then reassess. Some clients feel changes quickly, others need a longer block, and some see limited benefit.</div>
         </div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
-          Do I need a doctor's referral?
+          Do I need a doctor's referral or clearance?
           <span class="faq-chev">&#9660;</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner">A referral is not required for wellness sessions. For medical HBOT (treatment of specific conditions), we recommend a consultation with your doctor and our clinical team first. We work alongside your existing healthcare providers.</div>
+          <div class="faq-a-inner">A referral is not always required for wellness/recovery sessions, but doctor clearance is recommended for complex conditions, post-surgery concerns, and relative contraindications. This service is adjunct support and not a substitute for medical care.</div>
         </div>
       </div>
     </div>
@@ -438,11 +467,7 @@
         <div class="c-items">
           <div class="c-item">
             <div class="c-icon">&#128222;</div>
-            <div><h4>Phone</h4><p><a href="tel:+264816517839">+264 81 651 7839</a></p></div>
-          </div>
-          <div class="c-item">
-            <div class="c-icon">&#128140;</div>
-            <div><h4>Email</h4><p><a href="mailto:daniellasteyn88@gmail.com">daniellasteyn88@gmail.com</a></p></div>
+            <div><h4>Phone / WhatsApp</h4><p><a href="tel:+264816517854">+264 81 651 7854</a></p></div>
           </div>
           <div class="c-item">
             <div class="c-icon">&#128205;</div>
@@ -450,10 +475,10 @@
           </div>
           <div class="c-item">
             <div class="c-icon">&#128337;</div>
-            <div><h4>Hours</h4><p>Monday – Saturday: 08:00 – 18:00<br>Sunday: Closed</p></div>
+            <div><h4>Hours</h4><p>Mon-Fri 08:00-18:00<br>Sat 09:00-14:00<br>Sun by arrangement</p></div>
           </div>
         </div>
-        <a href="https://wa.me/264816517839?text=Hi%2C%20I%27d%20like%20to%20book%20an%20HBOT%20session" target="_blank" class="wa-btn">
+        <a href="https://wa.me/264816517854?text=Hi%2C%20I%27d%20like%20to%20book%20an%20mHBOT%20session" target="_blank" class="wa-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Chat on WhatsApp
         </a>
@@ -474,14 +499,15 @@
 <footer>
   <div class="footer-top">
     <div class="f-brand">
-      <div class="logo" style="color:white"><div class="logo-box">NWC</div>Namib Wellness Center</div>
-      <p>Namibia's premier hyperbaric oxygen therapy center. Certified, professional, and dedicated to your recovery and wellness.</p>
+      <div class="logo" style="color:white"><div class="logo-box">AFR</div>Afrateq mHBOT</div>
+      <p>Mild hyperbaric wellness/recovery sessions in Swakopmund with safety-first screening and realistic expectation setting.</p>
     </div>
     <div class="f-col">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#about">About HBOT</a></li>
         <li><a href="#services">Our Services</a></li>
+        <li><a href="#conditions">Conditions</a></li>
         <li><a href="#why">Why Us</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -490,19 +516,18 @@
       <h4>Contact</h4>
       <ul>
         <li><a href="#booking">Book a Session</a></li>
-        <li><a href="tel:+264816517839">+264 81 651 7839</a></li>
-        <li><a href="mailto:daniellasteyn88@gmail.com">daniellasteyn88@gmail.com</a></li>
+        <li><a href="tel:+264816517854">+264 81 651 7854</a></li>
         <li><a href="#contact">Swakopmund, Namibia</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bot">
-    <p>&copy; 2026 Namib Wellness Center. All rights reserved.</p>
-    <p class="disclaimer">&#9888;&#65039; Medical disclaimer: HBOT is not a substitute for conventional medical treatment. Always consult a qualified healthcare professional. Results may vary.</p>
+    <p>&copy; 2026 Afrateq. All rights reserved.</p>
+    <p class="disclaimer">&#9888;&#65039; mHBOT is adjunct wellness/recovery support. Results vary by individual. Not a substitute for medical care.</p>
   </div>
 </footer>
 
-<div class="toast" id="toast">&#9989; Booking request received! We'll confirm within 2 hours.</div>
+<div class="toast" id="toast">&#9989; Booking request saved on this device. Please also contact us on WhatsApp for confirmation.</div>
 
 <script>
   // Bulletproof image fallback: try data-fallback first, then show placeholder
