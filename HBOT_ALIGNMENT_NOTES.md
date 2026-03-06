@@ -26,7 +26,7 @@
 - Verified all local `href` and `src` references resolve for `index.html` and all `landing/*.html` pages.
 - Confirmed copied landing images exist in `landing/images/`.
 
-## Remaining Decisions Needed
-- Branding lock: should final public brand be `Afrateq`, `Namib Wellness Center`, or dual-brand (`Afrateq / Namib Wellness Center`)?
-- Official contact email: not present in the cited pricing/safety/B2C docs; provide canonical email if website should display one.
-- Exact street address: currently kept as Swakopmund + map area + WhatsApp share note; provide final published address if required.
+## Decisions Confirmed
+- **Brand:** Namib Wellness Center
+- **Email:** Dcupido@afrateq.net
+- **Address approach:** Vogelstrand, Swakopmund + “Exact location shared on WhatsApp upon confirmation.”
